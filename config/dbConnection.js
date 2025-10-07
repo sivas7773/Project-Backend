@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const dbConnection = async () => {
   try {
-    await mongoose.connect(orocess.env.DBURI, {
+    await mongoose.connect(process.env.DBURI, {
       ssl: true,
       tlsAllowInvalidCertificates: false,
     });
@@ -10,4 +10,4 @@ const dbConnection = async () => {
     console.error(err);
   }
 };
-module.exports = dbConnection;
+module.exports = dbConnection;  
