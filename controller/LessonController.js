@@ -91,7 +91,6 @@ const deleteLesson = async (req, res) => {
 module.exports = {
   CreateLesson,
   getLessons,
-  getLessonById,
   updateLesson,
   deleteLesson,
   getLessonsByCourseId
